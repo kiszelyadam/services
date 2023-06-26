@@ -1,0 +1,8 @@
+<ng-container *ngIf="cats$ | async as cats"  >
+    <p>{{cats?.fact}}</p>
+
+    <input type="number" disabled [value]="cats.length">
+</ng-container>
+
+
+<ng-container *ngIf="data$ | async"></ng-container>
